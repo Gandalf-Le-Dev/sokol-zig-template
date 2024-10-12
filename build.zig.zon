@@ -1,0 +1,19 @@
+.{
+    .name = "sokol-zig-template",
+    .version = "0.0.0",
+    .dependencies = .{
+        .sokol = .{
+            .url = "git+https://github.com/gandalf-le-dev/sokol-zig.git#89c48425f694ed2516566e0e1681adc6ac64a0ef",
+            .hash = "12203c57bd30a5554d1e2545fe9005874150e4ee51bb8381e4dee8a1c8d91df012db",
+        },
+        .zigbeam = .{
+            .url = "git+https://github.com/Gandalf-Le-Dev/zigbeam#889579ecf2b57f11b74c69082555fdcb302e216f",
+            .hash = "12204d22dc457753d44c2cda20a813f91a0274f285f1feb11778b07fa7856c4059b5",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
