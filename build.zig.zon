@@ -7,8 +7,8 @@
             .hash = "12203c57bd30a5554d1e2545fe9005874150e4ee51bb8381e4dee8a1c8d91df012db",
         },
         .zigbeam = .{
-            .url = "git+https://github.com/Gandalf-Le-Dev/zigbeam#889579ecf2b57f11b74c69082555fdcb302e216f",
-            .hash = "12204d22dc457753d44c2cda20a813f91a0274f285f1feb11778b07fa7856c4059b5",
+            .url = "git+https://github.com/Gandalf-Le-Dev/zigbeam#d4ad342313d3debaac068b11afb5e50476515f15",
+            .hash = "1220466fcf7bea9e3bdecb413c1854208a32ed6504e66365d0310c8bab4f00d63431",
         },
     },
     .paths = .{

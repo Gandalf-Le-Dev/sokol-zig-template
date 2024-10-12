@@ -19,9 +19,7 @@ const state = struct {
 };
 
 export fn init() void {
-    log(.debug, .game, "init from zigbeam", .{});
-    std.log.warn("init from std log", .{});
-    std.log.scoped(.log).err("init from std scoped log", .{});
+    log(.debug, .default, "init", .{});
 
     sg.setup(.{
         .environment = sglue.environment(),
@@ -58,10 +56,12 @@ export fn frame() void {
 }
 
 export fn cleanup() void {
+    log(.debug, .default, "cleanup", .{});
     sg.shutdown();
 }
 
 pub fn main() void {
+    log(.debug, .default, "app start", .{});
     sapp.run(.{
         .init_cb = init,
         .frame_cb = frame,
@@ -73,3 +73,7 @@ pub fn main() void {
         .logger = .{ .func = slog.func },
     });
 }
+
+pub const std_options = .{
+    .log_level = .debug,
+};
